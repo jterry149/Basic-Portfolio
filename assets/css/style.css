@@ -1,36 +1,108 @@
 /*=======Content Grid Layout ========================*/
-.grid-container{
-    max-width: auto;
-    margin: 0 auto;
-    grid-gap: 10px;
+.container{
     display: grid;
-    background-image: url("/assets/images/mochaGrunge.png") auto no-repeat;
-    grid-template-columns: repeat(auto-fit, minmax(960px, 1fr));   
+    grid-template-columns: 100% 1fr 1fr;
+    grid-template-rows: 100% 1fr 1fr 100%;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "header header nav-menu"
+      "content-1 content-1 content-1"
+      "content-1 content-1 content-1"
+      "footer footer footer";
 }
 
-.grid-header{
-    background-color: aqua;
+.header{
+    grid-area: header;
+    background-color: orange;
+    margin-bottom: 10px;
 }
-.grid-menu{
-    background-color: yellow;
+
+#nav-menu{
+    background: #a0c263;
+    text-align: end;
+    padding-right: 20px;
 }
-.grid-content{ 
-    background-color: blue;
-     
+
+.content-1{ 
+    grid-area: content-1;
+    background: #f5c531;
+    width: 960px;
+    height: 960px;
 }
-.grid-footer{
-    background-color: black;
-    color: white;
+
+.footer{
+    grid-area: footer;
+    background: black; 
+    color: #fff;
+    padding:20px;
 }
 /*======== Main Body Content ===========================*/
+* {
+    box-sizing: border-box;
+  }
+
 body {
-        background-image: url("/assets/images/mochaGrunge.png");
-        background-repeat: no-repeat;
-        background-color: #cccccc;
+    margin: 0 auto;
+    min-height: 100%;
+}
+/*========= Navigation styles ==========================*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*========= Heading Tags Styling\ ======================*/
+#bio-heading {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    border-bottom: 2px solid grey;
+}
+
+/*========== Paragraph Tags Styling ====================*/
+#bio-paragraph {
+   
+}
+
+/*======== Image Styling ===============================*/
+#bio-image{ 
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    padding-left: 20px;
 }
 
 /*======== Footer Styling ==============================*/
-#txt_footer{
+#txt_footer {
     text-align: center;
 }
 
