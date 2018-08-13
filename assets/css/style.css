@@ -1,0 +1,43 @@
+/*=======Content Grid Layout ========================*/
+.grid-container{
+    max-width: auto;
+    margin: 0 auto;
+    grid-gap: 10px;
+    display: grid;
+    background-image: url("/assets/images/mochaGrunge.png") auto no-repeat;
+    grid-template-columns: repeat(auto-fit, minmax(960px, 1fr));   
+}
+
+.grid-header{
+    background-color: aqua;
+}
+.grid-menu{
+    background-color: yellow;
+}
+.grid-content{ 
+    background-color: blue;
+     
+}
+.grid-footer{
+    background-color: black;
+    color: white;
+}
+/*======== Main Body Content ===========================*/
+body {
+        background-image: url("/assets/images/mochaGrunge.png");
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+}
+
+/*======== Footer Styling ==============================*/
+#txt_footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
