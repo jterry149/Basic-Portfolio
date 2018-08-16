@@ -1,6 +1,7 @@
 /*=======Content Grid Layout ========================*/
 .container{
     display: block;
+   
  }
  
  .header{
@@ -18,10 +19,11 @@
  
  .content-1{ 
      background: #ffffff;
-     width: 960px;
-     height: auto; 
+     margin-left:auto;
+     margin-right:auto;
+     width:960px;
      margin: 40px auto 100px;
-     overflow:hidden;
+     overflow: hidden;
  }
  
  .footer{
@@ -35,10 +37,11 @@
      bottom: 0;
  }
  /*======== Logo ========================================*/
- .logo {color: #ffffff;
+ .logo {
+    color: #ffffff;
     background-color: #4aaaa5;
     padding:20px;
-    margin-left:0px;
+    margin-left:15px;
  }
  /*======== Main Body Content ===========================*/
  * {
@@ -59,7 +62,7 @@
      width: 100%;
  }
 
- .about-me {
+ .about-me, .portfolio, .contact {
     border-bottom: 2px solid #dddddd;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -94,7 +97,6 @@
      border-left:1px #cccccc solid;
  }
  
- /* Change the link color to #4aaaa5 (teal) on hover */
  li a:hover {
      background-color: #4aaaa5;
  }
@@ -102,7 +104,10 @@
  .active{
      background-color: #cccccc;
  }
- /*========= Links Styling ==============================*/
+ a:focus {
+    background-color: #4aaaa5;
+ }
+ /*========= Links With In Body Styling ==============================*/
  .links:hover {
     color: #777777;
     text-decoration:underline;
@@ -119,7 +124,7 @@
      font-family: 'Georgia', Times, Times New Roman, serif;
  }
  
- #bio-heading { 
+ .content-heading { 
      text-align: left;
      margin-top: 20px;
      margin-right: 20px;
@@ -129,13 +134,13 @@
  p {
     float: left;
  }
- #bio-paragraph {
+ .content-paragraph {
      padding-top: 20px;
      padding-bottom:20px;
  }
  
  /*======== Image Styling ===============================*/
- #bio-image{ 
+ .content-images { 
      float: left;
      width: 200px;
      height: 200px;
@@ -143,12 +148,42 @@
  }
  
  /*======== Footer Styling ==============================*/
- #txt_footer {
+ .txt_footer {
      float:none;
      text-align: center;
      font-size: 12px;
  }
- 
+
+/*======== Contact Form Styling ========================*/
+/*======Style inputs with type="text"===================*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 2px solid #cccccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*== Style the submit button=============================*/
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button============*/
+input[type=submit]:hover {
+    background-color: #777777;
+}
+
+
+
  
  
  
