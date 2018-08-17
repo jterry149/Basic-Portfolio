@@ -64,16 +64,13 @@
  }
 
  .about-me {
-    border-bottom: 2px solid #dddddd;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
  }
  
-.portfolio {
-    display: flex;
-    border-bottom: 2px solid #dddddd;
+ .portfolio {
     padding-bottom: 10px;
     padding-top: 10px;
     margin-left: 20px;
@@ -136,12 +133,33 @@
     font-size: bold;
  }
  /*========= Heading Tags Styling =======================*/
- h1, h2, h3, h4, h5 {
-     display: inline;
+ h1 {
+     display:inline;
+     color: #4aaaa5;
+     font-family: 'Georgia', Times, Times New Roman, serif;
+ }
+
+ h2 {
+    padding-bottom:20px;
+    border-bottom: 2px solid #dddddd;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+ }
+
+ h3 {
      color: #4aaaa5;
      font-family: 'Georgia', Times, Times New Roman, serif;
  }
  
+ h4 {
+     color: #4aaaa5;
+     font-family: 'Georgia', Times, Times New Roman, serif;
+ }
+
+ h5 {
+     color: #4aaaa5;
+     font-family: 'Georgia', Times, Times New Roman, serif;
+ }
  #about-heading { 
      text-align: left;
      margin-top: 20px;
@@ -152,14 +170,13 @@
     text-align: left;
     margin-top: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    border-bottom: 2px solid #dddddd;
  }
  #portfolio-heading {
     text-align: left;
     margin-top: 20px;
     margin-right: 20px;
-    padding-top: 20px;
+    border-bottom: 2px solid #dddddd;
  }
  /*========== Paragraph Tags Styling ====================*/
  p {
@@ -172,7 +189,7 @@
  
  /*======== Image Styling ===============================*/
  .content-images { 
-     float: left;
+     float:left;
      width: 200px;
      height: 200px;
      margin-right: 20px;
@@ -214,9 +231,13 @@ input[type=submit]:hover {
 }
 
 /*============ Portfolio Page Styling ======================*/
+div.banner {
+    display: flex;
+}
+
 div.gallery {
     margin:5px;
-    border: 5px solid #cccccc;
+    border: 5px solid #777777;
     width: 180px;
 }
 
@@ -224,18 +245,46 @@ div.gallery:hover {
     border: 5px solid #4aaaa5;
 }
 
+div.gallery:focus {
+    border: 5px solid #777777;
+}
+
 div.gallery img {
+    background-color: #777777;
     width: 100%;
     height: 200px;
-    background-color: #777777;
 }
 
 div.desc {
-    padding: 15px;
+   padding:15px;
     text-align: center;
     color: #ffffff;
-    background-color: #777777;
+    background-color: #4aaaa5;
 }
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
